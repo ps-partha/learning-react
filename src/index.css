@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ============= style for card componect ============ */
+
+.Form-contenar{
+    background-color: #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+  }
+  .userForm{
+    width: 80%;
+  }
+  .title,.desc{
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .desc{
+    resize: vertical;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 250px;
+    height: 200px;
+  }
+  .card-title{
+    font-weight: bold;
+  }
+  
+  .card-header{
+    margin-top: 20px;
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+    .userForm{
+      width: 100%;
+    }
+  }
+
